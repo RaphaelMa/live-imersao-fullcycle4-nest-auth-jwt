@@ -8,5 +8,7 @@ services:
       - 3000:3000
     volumes:
       - .:/home/node/app
+    extra_hosts: 
+      - "host.docker.internal:192.168.65.2"
 
   
